@@ -1,6 +1,7 @@
 import { CheckCircle2, Gem, Minus, Trophy } from "lucide-react";
 import { StarRating } from "./star-rating";
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 export const ProductItem = ({ data }: { data: any }) => {
     return (
@@ -64,9 +65,10 @@ export const ProductItem = ({ data }: { data: any }) => {
                     <p className="text-xs lg:text-sm text-rating">{data?.ratingValue}</p>
                     <StarRating rating={data.stars} />
                 </div>
-                <button className="w-auto px-10 lg:px-0 lg:w-[232px] bg-blue hover:bg-blue/70 transition-colors duration-150 ease-out text-white py-1.5 lg:h-12 flex items-center justify-center rounded-md">
+
+                <Button className="w-auto px-10 lg:px-0 lg:w-[232px] py-1.5 lg:h-12 rounded-md">
                     View
-                </button>
+                </Button>
             </div>
 
             {/* Tag */}

@@ -24,12 +24,14 @@ const crumbs = [
     },
 ];
 export const BreadCrumbs = () => {
+    const baseStyle = "text-accent_3  text-xs sm:text-sm truncate";
+
     return (
         <div className="flex items-center mt-3 ">
             {crumbs.map((item, idx) => {
                 if (idx === crumbs.length - 1) {
                     return (
-                        <Link key={idx} href={"/"} className="text-accent_3  text-xs sm:text-sm">
+                        <Link key={idx} href={"/"} title={item.value} className={baseStyle}>
                             {item.value}
                         </Link>
                     );
@@ -37,7 +39,7 @@ export const BreadCrumbs = () => {
 
                 return (
                     <>
-                        <Link key={idx} href={"/"} className="text-accent_3 text-xs sm:text-sm">
+                        <Link key={idx} href={"/"} title={item.value} className={baseStyle}>
                             {item.value}
                         </Link>
                         <ChevronRight className="w-4 h-4 mx-2 text-accent_3" />

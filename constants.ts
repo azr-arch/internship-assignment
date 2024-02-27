@@ -92,3 +92,30 @@ export const ProductsData = [
         features: ["Documentation", "Easy Use", "Out of box"],
     },
 ];
+
+export const dealsData = [
+    {
+        id: 1,
+        title: "Webbuilder 1",
+        info: "Computer  Modern clasic with wix support",
+        currentPrice: "$39.96",
+        oldPrice: "$49.96",
+        discount: "20% Off",
+    },
+    {
+        id: 2,
+        title: "Webbuilder 1",
+        info: "Computer  Modern clasic with wix support",
+        currentPrice: "$39.96",
+        oldPrice: "$49.96",
+        discount: "20% Off",
+    },
+    {
+        id: 3,
+        title: "Webbuilder 1",
+        info: "Computer  Modern clasic with wix support",
+        currentPrice: "$39.96",
+        oldPrice: "$49.96",
+        discount: "20% Off",
+    },
+];

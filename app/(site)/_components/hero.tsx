@@ -3,6 +3,8 @@ import { BreadCrumbs } from "@/components/breadcrumbs";
 import { HeroMeta } from "./hero-meta";
 import { HeroNav } from "./hero-nav";
 import { ProductList } from "./product-list";
+import { RelatedItems } from "./related-items";
+import { SignUpBanner } from "@/components/sign-up-banner";
 
 export const Hero = () => {
     return (
@@ -16,6 +18,8 @@ export const Hero = () => {
                     <HeroNav />
                     <BreadCrumbs />
                     <ProductList />
+                    <RelatedItems />
+                    <SignUpBanner />
                 </div>
             </Container>
         </section>

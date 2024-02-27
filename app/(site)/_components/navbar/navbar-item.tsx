@@ -8,8 +8,11 @@ interface NavbarItemProps {
 export const NavbarItem = ({ href, value }: NavbarItemProps) => {
     // Use href value here
     return (
-        <Link href={"/"}>
-            <p className="text-navItem text-sm">{value}</p>
+        <Link
+            href={"/"}
+            className="text-navItem select-none text-sm transition-colors duration-200 ease-in-out hover:text-navItem/50"
+        >
+            <p>{value}</p>
         </Link>
     );
 };
