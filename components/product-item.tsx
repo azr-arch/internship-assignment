@@ -31,7 +31,7 @@ export const ProductItem = ({ data }: { data: any }) => {
                 {data?.highlightFeatures && (
                     <div className=" px-5 w-full">
                         <div className="w-full bg-highlight rounded-md space-y-3 py-2 px-5">
-                            {data.highlightFeatures.map((item) => (
+                            {data.highlightFeatures.map((item: any) => (
                                 <div key={item.score} className="flex items-center gap-4">
                                     <span className="bg-white text-blue text-base rounded-sm p-1">
                                         {item.score}
@@ -47,7 +47,7 @@ export const ProductItem = ({ data }: { data: any }) => {
                     <div className="w-full mt-4">
                         <p className="text-accent_1">Why we love it</p>
                         <ul className="space-y-1">
-                            {data.features.map((item, idx) => (
+                            {data.features.map((item: any, idx: number) => (
                                 <li key={idx} className="flex items-center gap-2">
                                     <CheckCircle2 className="w-4 h-4" />
                                     <p className="text-accent_2">{item}</p>
